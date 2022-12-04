@@ -2,11 +2,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Grid CSS */
+/* Grid CSS ID*/
 
-
-/* Category Grid CSS */
-
+#heroGrid { /* Category Grid CSS */
+  margin: 0px 5%
+  display: grid
+  min-height: 500px
+  height: 70vh
+}
 
 
 
