@@ -9,9 +9,13 @@ body {
   display: grid
   min-height: 500px
   height: 70vh
+  
 }
 
-
+.grid-container {
+  display: grid; 
+  grid-template-row1: 75% ; grid-template-column1: 75%
+  grid-template-row2: 25% ; grid-template-column2: 25%
 
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
