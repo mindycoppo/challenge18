@@ -4,21 +4,40 @@ body {
 
 /* Grid CSS ID*/
 
-#heroGrid { /* Category Grid CSS */
+#heroGrid {
   margin: 0px 5%
   display: grid
   min-height: 500px
   height: 70vh
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 25% 75%;
   
 }
 
-.grid-container {
-  display: grid; 
-  grid-template-row1: 75% ; grid-template-column1: 75%
-  grid-template-row2: 25% ; grid-template-column2: 25%
-
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+#heroGrid {grid-template-areas: featuredProduct; secondaryProduct; CTA;
+}
+
+.featuredProduct {
+  grid-area: 2 / 1 / span 2 / span 3;
+  background-image: "furniture1.png";
+}
+
+.secondaryProduct {
+  grid-area: 1 / 2 / span 2 / span 3;
+  background-image: "furniture2.png";
+}
+
+.CTA {
+  grid-area: 1 / 2 / span 2 / span 3;
+  background-image: "woddbg.png";
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.heroGridArea {}
 #navBar {
   display: flex;
   flex-direction: row;
@@ -60,6 +79,7 @@ h2 {
   margin: 0px 0px;
   color: #FF6200;
 }
+
 
 h3 {
   font-size: 32px;
